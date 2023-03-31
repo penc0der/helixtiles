@@ -318,92 +318,72 @@ import * as THREE from 'https://unpkg.com/three@0.139.2/build/three.module.js';
 import { TWEEN } from 'https://cdn.jsdelivr.net/npm/three@0.139.2/examples/jsm/libs/tween.module.min.js';
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.139.2/examples/jsm/controls/OrbitControls.js';
 import { CSS3DRenderer, CSS3DObject } from 'https://cdn.jsdelivr.net/npm/three@0.139.2/examples/jsm/renderers/CSS3DRenderer.js';
-
+// 7 tiles
 const technologies = [
 {
-  logo: 'https://devforth.io/static/img/tech/github.af7b7d9578a6.svg',
-  name: 'Northern Trust' },
-
+  logo: 'https://devforth.io/static/img/tech/docker.2b3477dd235a.svg',
+  name: 'Docker' },
 {
-  logo: 'https://devforth.io/static/img/tech/github.af7b7d9578a6.svg',
+  logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/800px-ChatGPT_logo.svg.png',
   name: 'OpenAi' },
-
+{
+  logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png',
+  name: 'VS Code' },
 {
   logo: 'https://devforth.io/static/img/tech/python.68d7ff916bc5.svg',
   name: 'Python' },
-
 {
-  logo: 'https://devforth.io/static/img/tech/github.af7b7d9578a6.svg',
-  name: 'Gradio' },
-
+  logo: 'https://companieslogo.com/img/orig/NTRS-d63c40d2.png',
+  name: 'Northern Trust' },
 {
-  logo: 'https://devforth.io/static/img/tech/docker.2b3477dd235a.svg',
-  name: 'Docker' },
-
-{
-  logo: 'https://devforth.io/static/img/tech/github.af7b7d9578a6.svg',
-  name: 'Jupyter' },
-
+  logo: 'https://raw.githubusercontent.com/penc0der/helixtiles/main/imgs/dna_small.png',
+  name: 'Wealth DNA' },
 {
   logo: 'https://devforth.io/static/img/tech/github.af7b7d9578a6.svg',
   name: 'Github' },
-
+  {
+  logo: 'https://devforth.io/static/img/tech/docker.2b3477dd235a.svg',
+  name: 'Docker' },
 {
-  logo: 'https://devforth.io/static/img/tech/github.af7b7d9578a6.svg',
-  name: 'Northern Trust' },
-
-{
-  logo: 'https://devforth.io/static/img/tech/github.af7b7d9578a6.svg',
+  logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/800px-ChatGPT_logo.svg.png',
   name: 'OpenAi' },
-
+{
+  logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png',
+  name: 'VS Code' },
 {
   logo: 'https://devforth.io/static/img/tech/python.68d7ff916bc5.svg',
   name: 'Python' },
-
 {
-  logo: 'https://devforth.io/static/img/tech/github.af7b7d9578a6.svg',
-  name: 'Gradio' },
-
+  logo: 'https://companieslogo.com/img/orig/NTRS-d63c40d2.png',
+  name: 'Northern Trust' },
 {
-  logo: 'https://devforth.io/static/img/tech/docker.2b3477dd235a.svg',
-  name: 'Docker' },
-
-{
-  logo: 'https://devforth.io/static/img/tech/github.af7b7d9578a6.svg',
-  name: 'Jupyter' },
-
+  logo: 'https://raw.githubusercontent.com/penc0der/helixtiles/main/imgs/dna_small.png',
+  name: 'Wealth DNA' },
 {
   logo: 'https://devforth.io/static/img/tech/github.af7b7d9578a6.svg',
   name: 'Github' },
-
+  {
+  logo: 'https://devforth.io/static/img/tech/docker.2b3477dd235a.svg',
+  name: 'Docker' },
 {
-  logo: 'https://devforth.io/static/img/tech/github.af7b7d9578a6.svg',
-  name: 'Northern Trust' },
-
-{
-  logo: 'https://devforth.io/static/img/tech/github.af7b7d9578a6.svg',
+  logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/800px-ChatGPT_logo.svg.png',
   name: 'OpenAi' },
-
+{
+  logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png',
+  name: 'VS Code' },
 {
   logo: 'https://devforth.io/static/img/tech/python.68d7ff916bc5.svg',
   name: 'Python' },
-
+{
+  logo: 'https://companieslogo.com/img/orig/NTRS-d63c40d2.png',
+  name: 'Northern Trust' },
+{
+  logo: 'https://raw.githubusercontent.com/penc0der/helixtiles/main/imgs/dna_small.png',
+  name: 'Wealth DNA' },
 {
   logo: 'https://devforth.io/static/img/tech/github.af7b7d9578a6.svg',
-  name: 'Gradio' },
-
-{
-  logo: 'https://devforth.io/static/img/tech/docker.2b3477dd235a.svg',
-  name: 'Docker' },
-
-{
-  logo: 'https://devforth.io/static/img/tech/github.af7b7d9578a6.svg',
-  name: 'Jupyter' },
-
-{
-  logo: 'https://devforth.io/static/img/tech/github.af7b7d9578a6.svg',
-  name: 'Github' }];
-
+  name: 'Github' },
+]
 
 
 let camera, scene, renderer;
